@@ -1,7 +1,7 @@
-
-{% load staticfiles %}
+ {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
-<body>
-    Restaurant Sign Up<br />
-    {% csrf_token %}
-    {{ user_form }} <br />
-    {{ restaurant_form }} <br />
 
-    <button type="submit">Sign Up</button>
+<body>
+    Restaurant Sign Up
+    <br />
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form }}
+        <br /> {{ restaurant_form }}
+        <br />
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
 </html>

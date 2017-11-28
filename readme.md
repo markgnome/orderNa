@@ -4,8 +4,10 @@ create virtual environment
 activate virtual environment  
     'source virtualEnv/foodtasker/bin/activate'
 
-install Pillow
+install Pillow, GuniCorn
     'python3 -m pip install Pillow'
+    'python3 -m pip install gunicorn'
+
 
 check versions
     'python3 -m pip freeze'

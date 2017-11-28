@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +8,12 @@
     <title>Home Test</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="{% static 'js/bootstrap.min.js' %}" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
 </head>
 <body>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Dropdown
           <span class="caret"></span>
@@ -23,6 +25,6 @@
           <li role="separator" class="divider"></li>
           <li><a href="#">Separated link</a></li>
         </ul>
-      </div>
+      </div> -->
 </body>
 </html>

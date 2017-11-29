@@ -26,3 +26,6 @@ apply all migrations
     'python3 manage.py migrate'
     Apply all migrations: admin, auth, contenttypes, foodtaskerapp, sessions
 
+facebook Id 899941493508731
+facebook Secret 09abd1b7ca0c5e806019b0fe270c4ddd
+
